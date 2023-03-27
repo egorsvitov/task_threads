@@ -9,7 +9,7 @@ with open("data.txt", 'r') as file:
         X.append(x)
         Y.append(y/10**6)
 
-fig, xy = plt.subplots(figsize=(16, 9), dpi=100)
+fig, xy = plt.subplots(figsize=(4, 3), dpi=100)
 xy.axis(xmin = 0, xmax = 13, ymin = 0, ymax = 2.5)
 xy.set_xlabel('Число потоков parallel_accumulate')
 xy.set_ylabel('Время, мс')
